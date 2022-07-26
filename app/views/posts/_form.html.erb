@@ -1,0 +1,6 @@
+<%= form_with model: Post.new, local: true do |form| %>
+  <p>
+    <%= form.text_field :body, required: true %>
+    <%= form.submit "送信" %>
+  </p>
+<% end %>
